@@ -1,4 +1,4 @@
-# LBP-DBN-face-recognition
+﻿# LBP-DBN-face-recognition
 使用LBP特征提取算法提取人脸特征，DBN网络来实现人脸识别，测试数据库-ORL数据库，识别率可达90%以上<br>
 ###工程使用方法：<br>
 clone下工程，要根据实际情况修改test_example_DBN.m中的文件路径<br>
@@ -65,3 +65,4 @@ http://blog.csdn.net/dark_scope/article/details/9447967<br>
 1、	IX: Neural Networks: Learning (Week 5)<br> 介绍反向传播算法，梯度校验（梯度校验可以检查我们的梯度下降法是否正确，也可以校验我们的反向传播算法是否正确）<br>
 2、	VII：正则化，我的程序中使用了正则参数<br>
 3、	X：Advice for Applying Machine Learning (Week 6)：讲述过拟合，欠拟合之类的,并教授描绘学习曲线的方法。<br>
+同时，负样本会较高的得分的逼近训练样本中最后一个样本，因此，在训练训练样本中最后部分加入任意负样本并编号，训练模型，得到模型。该模型可以使得测试集负样本全部指向训练样本中的负样本编号。这样模型就可以100%划分开正负样本，正确率较高。
